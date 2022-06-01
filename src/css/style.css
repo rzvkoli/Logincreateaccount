@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Vazirmatn:wght@100&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #2a71ff;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -60px;
+}
+
+#form {
+	width: 400px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+
+#form fieldset {
+	background: #fff;
+	border: 0 none;
+	padding: 100px 50px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#form input{
+	padding: 15px;
+	border: hidden;
+	margin-bottom: 7px;
+	width: 280px;
+	color: #000;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	background-color: #bbd2ff;
+}
+
+button{
+	width: 305px;
+	height: 45px;
+	border: none;
+	background-color: #2a71ff;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	margin: 3px;
+}
+
+button:hover{
+	background-color: #0156ff;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+@media only screen and (max-width:600px) {
+    body{
+      background-color: #fff;
+    }
+	
+    #form fieldset {
+	box-shadow: none;
+}
+  }
+
+/*Loading css*/
+
+#preloader-container{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+    background-color: #fff;
+	z-index: 1;
+    height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    place-items: center;
+}
+
+.preloader{
+	width: 40px;
+	height: 40px;
+	border: 10px solid #003399;
+	border-top-color: #2a71ff;
+	border-radius:  50%;
+	animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+	to{transform: rotate(360deg);}
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!-- Laoading -->
+    <div id="preloader-container">
+      <div class="preloader"></div>
+    </div>
+    <form id="form">
+      <fieldset id="createAccount">
+        <h1 class="title">Create your account</h1>
+        <input type="text" placeholder="UserName" />
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Confirm Password" />
+        <button type="button" class="Login">Create</button>
+        <button type="button" class="Create" onclick="showLogin()">Login</button>
+      </fieldset>
+      <fieldset id="login">
+        <h1 class="title">Login</h1>
+        <input type="text" placeholder="UserName" />
+        <input type="password" placeholder="Password" />
+        <button class="Login">Login</button>
+        <button type="button" class="Create"
+        onclick="showCreateAccount()">Create Acc</button>
+      </fieldset>
+    </form>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
