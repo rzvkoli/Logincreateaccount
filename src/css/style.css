@@ -61,16 +61,6 @@ button:hover{
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-@media only screen and (max-width:600px) {
-    body{
-      background-color: #fff;
-    }
-	
-    #form fieldset {
-	box-shadow: none;
-}
-  }
-
 /*Loading css*/
 
 #preloader-container{
@@ -99,3 +89,13 @@ button:hover{
 @keyframes spin {
 	to{transform: rotate(360deg);}
 }
+
+@media only screen and (max-width:600px) {
+    body{
+      background-color: #fff;
+    }
+	
+    #form fieldset {
+	box-shadow: none;
+}
+  }
